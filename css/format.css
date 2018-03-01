@@ -1,0 +1,394 @@
+/* ----- Summary ----- */
+/* ------------------- */
+/* - Font Faces        */
+/* - Typos and tables  */
+/* - Navbar            */
+/* - Carousel          */
+/* - Pills             */
+/* - Captured Section  */
+/* - Portraits         */
+/* - Media Screen      */
+
+/* Font Faces */
+
+@font-face {
+    font-family: 'anironcbold';
+    src: url('../fonts/fontface/anicb___.woff2') format('woff2'),
+    url('../fonts/fontface/anicb___.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'anironcregular';
+    src: url('../fonts/fontface/anicm___.woff2') format('woff2'),
+    url('../fonts/fontface/anicm___.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'anironbold';
+    src: url('../fonts/fontface/anirb___.woff2') format('woff2'),
+    url('../fonts/fontface/anirb___.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'anironregular';
+    src: url('../fonts/fontface/anirm___.woff2') format('woff2'),
+    url('../fonts/fontface/anirm___.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'party_businessregular';
+    src: url('../fonts/fontface/partybusiness.woff2') format('woff2'),
+    url('../fonts/fontface/partybusiness.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Typos and tables */
+
+h1, h2, h3, h4, h5, h6, .nav, table {
+    font-family: 'anironregular', cursive;
+}
+
+table {
+    width: 100%;
+    margin: 30px 0;
+}
+
+tr,td {
+    padding: 10px;
+}
+
+tr {
+    border-bottom: 1px solid #999;
+    color: #999;
+}
+
+tr:first-child {
+    border-bottom: 2px solid #333;
+    color: #333;
+}
+
+.fontParty {
+    font-family: 'party_businessregular';
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 20px 0 40px 0;
+}
+
+a {
+    text-decoration: underline;
+    color: #333;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #333;
+}
+
+p, .btn-fan {
+    font-family: 'party_businessregular', cursive;
+    font-size: 1.5em;
+}
+
+#aboutRing p {
+    font-size: 2em;
+}
+
+.author {
+    text-align: right;
+    color: #999;
+}
+
+h2 span {
+    font-size: 0.8em;
+}
+
+h2 span.deco {
+    font-family: 'Tengwarc',cursive;
+}
+
+section {
+    padding: 30px;
+}
+
+/* Navbar */
+
+.navbar {
+    margin-bottom: 0;
+}
+
+.navbar-default {
+    background-color: #ff4d00;
+    border: 0;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+}
+
+.navbar-default .navbar-nav>.active>a {
+    background-color: transparent;
+    color: #fff;
+}
+
+.navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>li>a:hover {
+    color: #fff;
+    border-bottom: 3px solid #fff;
+    background-color: transparent;
+}
+
+/* Carousel */
+
+.carousel .item {
+    height: 450px;
+}
+
+.carousel-caption {
+    bottom: 20%;
+}
+
+.item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 450px;
+}
+
+/* Pills */
+
+#pillsSection, #bestHunters, #NeedYou {
+    background: url(../img/_bg_light.png) 0 0 repeat;
+    overflow: hidden;
+    clear: both;
+}
+
+.nav-pills {
+    margin: 0 auto;
+    max-width: 600px;
+    margin-bottom: 40px;
+}
+
+.nav-pills>li>a {
+    color: #666;
+    text-decoration: none;
+}
+
+.nav-pills>li>a:hover {
+    background-color: transparent;
+}
+
+.nav-pills>li.active {
+    border-bottom: 3px solid #ff4d00;
+}
+
+.nav-pills>li.active>a,.nav-pills>li.active>a:hover {
+    background-color: transparent;
+    color: #ff4d00;
+}
+
+input, textarea, select {
+    font-family: 'anironcregular', cursive;
+}
+
+.form-control {
+    height: 38px;
+}
+
+textarea.form-control {
+    height: 183px;
+}
+
+/* Captured section */
+
+#capturedSection, #aboutRing, #contactUs {
+    background: url(../img/_bg_dark.png) 0 0 repeat;
+    overflow: hidden;
+    color: #fff;
+}
+
+.panel {
+    color: #333;
+    border: 0;
+}
+
+.panel-default>.panel-heading {
+    background-color: #ff4d00;
+    color: #fff;
+}
+
+footer {
+    background-color: #ff4d00;
+    color: #fff;
+    padding: 20px;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    padding: 10px 0;
+}
+
+footer ul li a, footer p {
+    color:#fff;
+    text-decoration: none;
+    font-family: 'anironcregular', cursive;
+}
+
+footer p {
+    font-size : 1.3em;
+}
+
+footer p.footerNote {
+    font-size : 0.9em;
+}
+
+footer p.logo {
+    margin-top: 30px;
+}
+
+.btn-sauronInfo {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.btn-fan, .btn-fan:hover {
+    border: 0;
+    background: url(../img/facebook_btn.png) 0 0 no-repeat;
+    background-color: transparent;;
+    width: 124px;
+    height: 35px;
+    padding-left:30px;
+    color: #ff8200;
+}
+
+.orange {
+    color: #ff4d00;
+}
+
+.btn-sauron, .btn-sauron:hover {
+    color: transparent;
+    border: 0;
+    background: url(../img/sauron_btn.png) 0 0 no-repeat;
+    background-color: transparent;
+    width: 450px;
+    height: 73px;
+}
+
+/* Portraits */
+
+.thumbnail {
+    position: relative;
+    background-color: #000;
+}
+
+.portraitDescription {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.portraitDescription a, a:hover {
+    text-decoration: none;
+}
+
+.overlay {
+    position: absolute;
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: background-color 0.5s;
+}
+
+.overlay_content {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+.containerPortrait:hover .overlay_content {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.containerPortrait:hover #overlay {
+    background-color: rgba(255, 255, 255, 0);
+    transition: background-color 0.5s;
+}
+
+.containerPortrait:hover h1 {
+    font-size: 3em;
+    margin-top: 70%;
+    transition: font-size 0.5s;
+    transition: margin-top 0.5s;
+}
+
+.containerPortrait h2 {
+    font-size: 1.4em;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-width: 1px;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.img-responsive {
+    width: 100%;
+}
+
+h2.deadTitle {
+    background-color: transparent;
+    font-size: 1.9em;
+}
+
+.dead {
+    text-decoration: line-through;
+}
+
+.containerPortrait span {
+    color: #FFA500;
+    font-size: 1.1em;
+}
+
+.containerPortrait h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 2em;
+    margin-top: 80px;
+    transition: font-size 0.5s;
+    transition: margin-top 0.5s;
+}
+
+/* Media Screen */
+
+@media screen and (max-width:768px) {
+    .nav-pills {
+        width: 100%;
+    }
+
+    .img-circle {
+        margin: auto;
+    }
+
+    .containerPortrait:hover h1 {
+        font-size: 2em;
+        margin-top: 10px;
+    }
+}

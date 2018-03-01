@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="author" content="Gaëtan Rolé-Dubruille">
+  <meta name="description" content="Final Integration Quest">
+  <meta name="keywords" content="Final Integration">
+  <title>Find the Precious</title>
+
+  <!-- Latest compiled and minified Bootstrap CSS files -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- Personal CSS -->
+  <link rel="stylesheet" href="css/format.css">
+
+  <!-- Favicons -->
+  <link rel="shortcut icon" type="image/x-icon" href="#">
+  <link rel="apple-touch-icon" type="image/x-icon" href="#">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+<!-- Header : navbar, carousel -->
+<header>
+  <!-- Navbar -->
+  <nav class="navbar navbar-default">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand hidden-sm visible-xs visible-md visible-lg" href="#">
+        <img alt="Brand" src="img/_logo.png" class="img-responsive">
+      </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="#">Link <span class="sr-only">Fellows</span></a></li>
+        <li><a href="#">The Ring</a></li>
+        <li><a href="#">Rewards</a></li>
+        <li><a href="#">Hunters</a></li>
+        <li><a href="#">Join</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+
+  <!-- Carousel -->
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="img/_dark_vador.jpg" alt="Vador">
+        <div class="carousel-caption">
+          <h1>Sauron is a very good bro,</h1>
+          <h2>Please help him to find the ring !</h2>
+        </div>
+      </div>
+      <div class="item">
+        <img src="img/_dark_vador2.jpg" alt="Vador">
+        <div class="carousel-caption">
+          <h1>I swear, he is</h1>
+          <h2>Really you should help him</h2>
+        </div>
+      </div>
+      <div class="item">
+        <img class="img-responsive" src="img/_dark_vador3.jpg" alt="Vador">
+        <div class="carousel-caption">
+          <h1>Hey, on my mother's head he's a great guy</h1>
+          <h2>Well, my mother is dead, but who cares?</h2>
+        </div>
+      </div>
+    </div>
+    <!-- End Carousel -->
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</header>
+
+<!-- Main div -->
+<div id="main">
+
+  <!-- Pills sections with Gandalf, Aragorn, Gimli -->
+  <section id="pillsSection">
+
+    <!-- Above title -->
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h2>Fellows wanted dead <span>(or alive if you want to eat them later)</span></h2>
+          <ul class="nav nav-pills">
+            <li role="presentation"><a href="#">Most wanted</a></li>
+            <li role="presentation" class="active"><a href="#">Most dangerous</a></li>
+            <li role="presentation"><a href="#">Already captured</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Wanted men -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <!-- Gandalf -->
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <a href="#" class="thumbnail">
+              <div class="containerPortrait">
+                <div class="overlay">
+                  <div class="overlay_content">
+                    <h2>Reward <span>1000</span> golden coins</h2>
+                  </div>
+                  <h1>Gandalf</h1>
+                </div>
+                <img class="img-responsive" src="img/_gandalf.png" alt="Gandalf">
+              </div>
+              <div class="portraitDescription">
+                <p>A very dangerous guy and Balrog killer...</p>
+              </div>
+            </a>
+          </div>
+          <!-- Aragorn -->
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <a href="#" class="thumbnail">
+              <div class="containerPortrait">
+                <div class="overlay">
+                  <div class="overlay_content">
+                    <h2>Reward <span>800</span> golden coins</h2>
+                  </div>
+                  <h1>Aragorn</h1>
+                </div>
+                <img class="img-responsive" src="img/_aragorn.png" alt="Aragorn">
+              </div>
+              <div class="portraitDescription">
+                <p>Sauron's finger says his sword is dangerous...</p>
+              </div>
+            </a>
+          </div>
+          <!-- Gimli -->
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <a href="#" class="thumbnail">
+              <div class="containerPortrait">
+                <div class="overlay">
+                  <div class="overlay_content">
+                    <h2 class="orange deadTitle">Dead</h2>
+                  </div>
+                  <h2 class="dead">Gimli</h2>
+                </div>
+                <img class="img-responsive" src="img/_gimli.png" alt="Gimli">
+              </div>
+              <div class="portraitDescription">
+                <p>A dwarf, with a beard and an axe...</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End PillsSection -->
+
+  <!-- Captured section with Sauron coin -->
+  <section id="capturedSection">
+    <div class="container">
+      <div class="row">
+        <h2>I have capture one of them, how do I get my reward?</h2>
+        <div class="col-md-10 col-sm-8 col-xs-12">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="col-md-2 col-sm-4 hidden-xs visible-sm visible-md visible-lg">
+          <img class="img-responsive" src="img/_coin_sauron.png" alt="Sauron Coin">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Captured Section -->
+
+  <!-- Best Hunters Section -->
+  <section id="bestHunters">
+    <div class="container">
+      <div class="row">
+        <h2>Our best Hunters</h2>
+        <!-- Hunter 1 -->
+        <div class="media col-md-6 col-sm-12">
+          <div class="media-left">
+            <a href="#">
+              <img class="media-object" src="img/_hunter1.png" alt="Hunter1">
+            </a>
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">Elveskillers22</h4>
+            <p>2 captures - <a href="#">Profile</a></p>
+            <button type="button" name="button" class="btn btn-primary btn-fan">12 fans</button>
+          </div>
+        </div>
+        <!-- Hunter 2 -->
+        <div class="media col-md-6 col-sm-12">
+          <div class="media-left">
+            <a href="#">
+              <img class="media-object" src="img/_hunter2.png" alt="Hunter1">
+            </a>
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">Goblin45</h4>
+            <p>1 capture - <a href="#">Profile</a></p>
+            <button type="button" name="button" class="btn btn-primary btn-fan">12 fans</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Best Hunters Section -->
+
+  <!-- About The Ring Section -->
+  <section id="aboutRing">
+    <div class="container">
+      <div class="row">
+        <h2>About the Ring</h2>
+        <!-- 1 panel -->
+        <div class="panel panel-default">
+          <div class="panel-heading"><h4>Ring capabilities</h4></div>
+          <div class="panel-body">
+            <h3 class="fontParty">What can our master Sauron do with the ring ?</h3>
+            <table>
+              <tr>
+                <th>Feature</th>
+                <th>Description</th>
+              </tr>
+              <tr>
+                <td>Main</td>
+                <td>Rule them all</td>
+              </tr>
+              <tr>
+                <td>Invisibility</td>
+                <td>You can't see me</td>
+              </tr>
+              <tr>
+                <td>Power</td>
+                <td>Destroy the world</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <!-- 2 panel -->
+        <div class="panel panel-default">
+          <div class="panel-heading"><h4>Why the ring is awesome ?</h4></div>
+          <div class="panel-body">
+            <div class="col-sm-9 col col-xs-12">
+              <p>My preciiiiiiiiiiiiious! Er Er, we waaaannnntttt the precioooooooooussssssssss!</p>
+              <p class="author">-Gollum</p>
+            </div>
+            <div class="col-sm-3 col-xs-12">
+              <img class="img-circle img-responsive" src="img/_gollum.png" alt="Gollum">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End About The Ring Section -->
+
+  <!-- NeedYou Section -->
+  <section id="NeedYou">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <h2>Join Mordor Army</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          </p>
+        </div>
+        <div class="col-md-5">
+          <img class="img-responsive" src="img/_army.png" alt="army">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 hidden-sm visible-md visible-lg">
+          <img class="img-responsive" src="img/_weneedyou-1.png" alt="We need you">
+        </div>
+        <div class="col-md-9 col-sm-12 btn-sauronInfo">
+          <h4 class="orange">More infos on</h4>
+          <button class="btn btn-sauron">Sauronrulesthemall.com</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End NeedYou Section -->
+
+  <!-- Contact Us Section -->
+  <section id="contactUs">
+    <div class="container">
+      <div class="row">
+        <h2>Contact us</h2>
+        <div class="col-md-6 col-sm-12">
+          <form>
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="@">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" placeholder="Adress">
+            </div>
+            <div class="form-group">
+              <select class="form-control">
+                <option value="1">I have see one of them.</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-5 col-md-offset-1 col-sm-12">
+          <img class="img-responsive" src="img/_map.png" alt="Map">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Contact Us Section-->
+
+</div>
+<!-- End main div -->
+
+<!-- Footer -->
+<footer>
+  <div class="row">
+    <div class="col-md-4 col-sm-6">
+      <ul>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Fellows</a></li>
+        <li><a href="#">Join our army</a></li>
+      </ul>
+    </div>
+    <div class="col-md-4 col-sm-6">
+      <ul>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Reward conditions</a></li>
+        <li><a href="#">Legal Mentions</a></li>
+      </ul>
+    </div>
+    <div class="col-md-4 col-sm-6">
+      <p>Sauron4ever.com</p>
+      <p class="footerNote">Follow him also on twitter</p>
+      <p class="logo"><img src="img/_logo.png" alt="logo"></p>
+    </div>
+  </div>
+</footer>
+<!-- End Footer -->
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
