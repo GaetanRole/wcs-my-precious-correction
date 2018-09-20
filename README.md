@@ -3,11 +3,11 @@
 
 ## Description
 
-Static page for WCS's quest using Bootstrap 3.3.7, created from wireframes.
+Static page for WCS's quest using Bootstrap 4, created from wireframes.
 
 ## Technos
 
-HTML / CSS / JS / Bootstrap 3.3.7.
+HTML / CSS / JS / Bootstrap 4.
 
 ## Require
     
@@ -15,6 +15,7 @@ HTML / CSS / JS / Bootstrap 3.3.7.
 
 ## Download project
 
-Go to your www/ folder and move this repo in it.
+- Go to your www/ folder and move this repo in it.
+- Or just launch in CLI : php -S localhost:8000.
 
-- 01/03/2018 - V.1.0.0.
+- 20/09/2018 - V.1.1.0.

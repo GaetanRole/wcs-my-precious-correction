@@ -7,38 +7,39 @@
 /* - Pills             */
 /* - Captured Section  */
 /* - Portraits         */
+/* - Footer            */
 /* - Media Screen      */
 
 /* Font Faces */
 
 @font-face {
     font-family: 'anironcbold';
-    src: url('../fonts/fontface/anicb___.woff2') format('woff2'),
-    url('../fonts/fontface/anicb___.woff') format('woff');
+    src: url('../fonts/anicb___.woff2') format('woff2'),
+    url('../fonts/anicb___.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'anironcregular';
-    src: url('../fonts/fontface/anicm___.woff2') format('woff2'),
-    url('../fonts/fontface/anicm___.woff') format('woff');
+    src: url('../fonts/anicm___.woff2') format('woff2'),
+    url('../fonts/anicm___.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'anironbold';
-    src: url('../fonts/fontface/anirb___.woff2') format('woff2'),
-    url('../fonts/fontface/anirb___.woff') format('woff');
+    src: url('../fonts/anirb___.woff2') format('woff2'),
+    url('../fonts/anirb___.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'anironregular';
-    src: url('../fonts/fontface/anirm___.woff2') format('woff2'),
-    url('../fonts/fontface/anirm___.woff') format('woff');
+    src: url('../fonts/anirm___.woff2') format('woff2'),
+    url('../fonts/anirm___.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -46,16 +47,23 @@
 
 @font-face {
     font-family: 'party_businessregular';
-    src: url('../fonts/fontface/partybusiness.woff2') format('woff2'),
-    url('../fonts/fontface/partybusiness.woff') format('woff');
+    src: url('../fonts/partybusiness.woff2') format('woff2'),
+    url('../fonts/partybusiness.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
 
+@font-face {
+    font-family: 'Tengwar';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Tengwar Annatar'), url('../fonts/tngan.woff') format('woff');
+}
+
 /* Typos and tables */
 
-h1, h2, h3, h4, h5, h6, .nav, table {
+h1, h2, h3, h4, h5, h6, .navbar, table {
     font-family: 'anironregular', cursive;
 }
 
@@ -79,21 +87,17 @@ tr:first-child {
 }
 
 .fontParty {
-    font-family: 'party_businessregular';
+    font-family: 'party_businessregular', cursive;
     font-size: 2em;
+    color: black;
 }
 
 h2 {
-    font-size: 1.5em;
+    font-size: 2em;
     margin: 20px 0 40px 0;
 }
 
 a {
-    text-decoration: underline;
-    color: #333;
-}
-
-a:hover {
     text-decoration: none;
     color: #333;
 }
@@ -101,6 +105,22 @@ a:hover {
 p, .btn-fan {
     font-family: 'party_businessregular', cursive;
     font-size: 1.5em;
+}
+
+.btn-lotr {
+    margin: 0 auto;
+    text-align: center;
+    background-color: white;
+    font-family: 'anironbold', cursive;
+    color: #ff7020;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 0;
+}
+
+.btn-lotr:hover {
+    background-color: #7e7e7e;
+    color: #ff5800;
 }
 
 #aboutRing p {
@@ -112,59 +132,85 @@ p, .btn-fan {
     color: #999;
 }
 
-h2 span {
-    font-size: 0.8em;
+h2 span.deco {
+    font-family: 'Tengwar', cursive;
+    color: #ff4d00;
+    font-size: 30px;
 }
 
-h2 span.deco {
-    font-family: 'Tengwarc',cursive;
+h4 span {
+    font-size: 0.7em;
+}
+
+h4 span.deco {
+    font-family: 'Tengwar', cursive;
+    color: #ff4d00;
+    font-size: 30px;
+}
+
+h5 span.deco {
+    font-family: 'Tengwar', cursive;
+    color: #ff4d00;
+    font-size: 30px;
+}
+
+a span.deco {
+    font-family: 'Tengwar', cursive;
+    color: #ff4d00;
 }
 
 section {
     padding: 30px;
 }
 
-/* Navbar */
-
-.navbar {
-    margin-bottom: 0;
+input, textarea, select {
+    font-family: 'anironcregular', cursive;
 }
 
-.navbar-default {
-    background-color: #ff4d00;
+/* Navbar */
+
+.navbar-light {
+    margin-bottom: 0;
+    background-color: #ff7020;
     border: 0;
 }
 
-.navbar-default .navbar-nav>li>a {
+.navbar-light .navbar-nav .nav-link {
+    color: white !important;
+}
+
+.navbar .navbar-nav>li>a {
     color: #fff;
 }
 
-.navbar-default .navbar-nav>.active>a {
+.navbar .navbar-nav>.active>a {
     background-color: transparent;
     color: #fff;
 }
 
-.navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>li>a:hover {
+.navbar .navbar-nav>.active>a:hover, .navbar .navbar-nav>li>a:hover {
     color: #fff;
     border-bottom: 3px solid #fff;
     background-color: transparent;
 }
 
+.pipe-divider {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
 /* Carousel */
 
-.carousel .item {
-    height: 450px;
+.carousel-item img {
+    max-height: 800px;
 }
 
 .carousel-caption {
-    bottom: 20%;
-}
-
-.item img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-height: 450px;
+    top: 60%;
+    transform: translateY(-60%);
 }
 
 /* Pills */
@@ -176,9 +222,10 @@ section {
 }
 
 .nav-pills {
-    margin: 0 auto;
-    max-width: 600px;
-    margin-bottom: 40px;
+    margin: 20px auto;
+    font-family: 'anironbold', cursive;
+    font-size: 22px;
+    font-weight: bold;
 }
 
 .nav-pills>li>a {
@@ -199,10 +246,6 @@ section {
     color: #ff4d00;
 }
 
-input, textarea, select {
-    font-family: 'anironcregular', cursive;
-}
-
 .form-control {
     height: 38px;
 }
@@ -219,15 +262,199 @@ textarea.form-control {
     color: #fff;
 }
 
-.panel {
-    color: #333;
-    border: 0;
+#capturedSection, #bestHunters {
+    padding-bottom: 60px;
 }
 
-.panel-default>.panel-heading {
+#aboutRing .card {
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #eeeeee;
+}
+
+.card {
+    border: none;
+}
+.card-header {
     background-color: #ff4d00;
     color: #fff;
 }
+
+.card-body {
+    padding: 40px;
+    border-bottom: 5px solid #ff4d00;
+}
+
+.btn-sauronInfo {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.btn-fan, .btn-fan:hover {
+    border: 0;
+    background: url(../img/facebook_btn.png) 0 0 no-repeat;
+    background-color: transparent;;
+    width: 124px;
+    height: 35px;
+    padding-left:30px;
+    color: #ff8200;
+}
+
+.orange {
+    color: #ff4d00;
+}
+
+.btn-sauron, .btn-sauron:hover {
+    color: transparent;
+    border: 0;
+    background: url(../img/sauron_btn.png) 0 0 no-repeat;
+    background-color: transparent;
+    width: 450px;
+    height: 73px;
+}
+
+/* Portraits */
+
+.card {
+    position: relative;
+    background-color: #000;
+    min-width: 320px;
+}
+
+.gimli .overlay {
+    background-color: black;
+
+}
+
+.gimli .overlay_content {
+    text-align: center;
+
+}
+
+.gimli .dead {
+    text-decoration: line-through;
+    color: #ff4d00;
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 220px;
+}
+
+.portraitDescription {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.portraitDescription a, a:hover {
+    text-decoration: none;
+}
+
+.containerPortrait:hover .overlay {
+    opacity: 0;
+}
+
+.containerPortrait img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.containerImg {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.2;
+    transition: .5s ease;
+    background-color: rgb(255, 255, 255);
+}
+
+.overlay_content {
+    position: absolute;
+    padding: 30px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    transition: opacity 0.5s;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.containerPortrait:hover .overlay_content {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+.containerPortrait:hover #overlay {
+    background-color: rgba(255, 255, 255, 0);
+    transition: background-color 0.5s;
+}
+
+.containerPortrait:hover h1 {
+    margin-top: 60%;
+    transition: margin-top 0.5s;
+}
+
+.containerPortrait:hover h2 {
+    opacity: 0;
+}
+
+.containerPortrait h2 {
+    font-family: 'party_businessregular', cursive;
+    font-size: 1.8em;
+    font-weight: 400;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-width: 1px;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.img-responsive {
+    width: 100%;
+}
+
+.media-body {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.media-body h4 {
+    color: #ff4d00;
+    font-family: 'party_businessregular', cursive;
+    font-size: 3.5em;
+}
+
+h2.deadTitle {
+    background-color: transparent;
+    font-size: 1.9em;
+}
+
+.containerPortrait span {
+    color: #FFA500;
+    font-size: 1.1em;
+}
+
+.containerPortrait h1 {
+    text-align: center;
+    color: #fff;
+    margin-top: 150px;
+    transition: margin-top 0.5s;
+}
+
+/* Footer */
 
 footer {
     background-color: #ff4d00;
@@ -263,120 +490,13 @@ footer p.logo {
     margin-top: 30px;
 }
 
-.btn-sauronInfo {
-    margin: 50px 0;
-    text-align: center;
-}
-
-.btn-fan, .btn-fan:hover {
-    border: 0;
-    background: url(../img/facebook_btn.png) 0 0 no-repeat;
-    background-color: transparent;;
-    width: 124px;
-    height: 35px;
-    padding-left:30px;
-    color: #ff8200;
-}
-
-.orange {
-    color: #ff4d00;
-}
-
-.btn-sauron, .btn-sauron:hover {
-    color: transparent;
-    border: 0;
-    background: url(../img/sauron_btn.png) 0 0 no-repeat;
-    background-color: transparent;
-    width: 450px;
-    height: 73px;
-}
-
-/* Portraits */
-
-.thumbnail {
-    position: relative;
-    background-color: #000;
-}
-
-.portraitDescription {
-    background-color: #000;
-    color: #fff;
-    text-align: center;
-    font-size: 1.5em;
-}
-
-.portraitDescription a, a:hover {
-    text-decoration: none;
-}
-
-.overlay {
-    position: absolute;
-    padding: 30px;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
-    transition: background-color 0.5s;
-}
-
-.overlay_content {
-    opacity: 1;
-    transition: opacity 0.5s;
-}
-
-.containerPortrait:hover .overlay_content {
-    opacity: 0;
-    transition: opacity 0.5s;
-}
-
-.containerPortrait:hover #overlay {
-    background-color: rgba(255, 255, 255, 0);
-    transition: background-color 0.5s;
-}
-
-.containerPortrait:hover h1 {
-    font-size: 3em;
-    margin-top: 70%;
-    transition: font-size 0.5s;
-    transition: margin-top 0.5s;
-}
-
-.containerPortrait h2 {
-    font-size: 1.4em;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-width: 1px;
-    border-radius: 15px;
-    padding: 15px;
-}
-
-.img-responsive {
-    width: 100%;
-}
-
-h2.deadTitle {
-    background-color: transparent;
-    font-size: 1.9em;
-}
-
-.dead {
-    text-decoration: line-through;
-}
-
-.containerPortrait span {
-    color: #FFA500;
-    font-size: 1.1em;
-}
-
-.containerPortrait h1 {
-    text-align: center;
-    color: #fff;
-    font-size: 2em;
-    margin-top: 80px;
-    transition: font-size 0.5s;
-    transition: margin-top 0.5s;
-}
-
 /* Media Screen */
+
+@media screen and (max-width:570px) {
+    .btn-sauronInfo {
+        display: none;
+    }
+}
 
 @media screen and (max-width:768px) {
     .nav-pills {
@@ -390,5 +510,9 @@ h2.deadTitle {
     .containerPortrait:hover h1 {
         font-size: 2em;
         margin-top: 10px;
+    }
+
+    .media-body h4 {
+        font-size: 1.8em;
     }
 }
